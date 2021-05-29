@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CI_BUILD_STATUS_BADGE_OLD=$(grep -i build status README.md)
+CI_BUILD_STATUS_BADGE_OLD=$(grep -i "build status" README.md)
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 CI_BUILD_STATUS_BADGE="[![Build Status](https://falcon.ecg.rice.edu:443/buildStatus/icon?job=github_public_agora%2F${BRANCH_NAME})](https://falcon.ecg.rice.edu:443/job/github_public_agora/job/${BRANCH_NAME}/)"
 echo $BRANCH_NAME
